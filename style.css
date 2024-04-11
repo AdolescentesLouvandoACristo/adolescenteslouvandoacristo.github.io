@@ -9,7 +9,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: brightness(2);
     /* font-family: 'ITC Benguiat Std', sans-serif; */
     height: 100vh;
     display: flex;
