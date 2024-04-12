@@ -9,17 +9,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* font-family: 'ITC Benguiat Std', sans-serif; */
-    height: 100vh;
+    min-height: 100vh;
+
+}
+
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+    margin: 0;
+}
+@media (width < 800px) {
+    .content {
+        padding: 1rem;
+        gap: 1rem;
+    }
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -28,15 +38,20 @@ header {
     padding: 1rem;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-title {
     font-weight: 400;
     color: yellow;
+    text-align: center;
 }
 
-.content {
+.post {
     font-size: larger;
-    background-color: #0008;
+    background-color: #000a;
     color: white;
     padding: 3rem;
     display: flex;
@@ -45,7 +60,7 @@ header {
     max-width: 80vw;
 }
 @media (width <= 800px) {
-    .content {
+    .post {
         max-width: 85vw;
     }
 
